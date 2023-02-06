@@ -1,0 +1,9 @@
+.create{
+    display: flex;
+    background-color: blanchedalmond;
+  }
+  .formulaire{
+  display: flex;
+  flex-direction: column;
+  }
+  

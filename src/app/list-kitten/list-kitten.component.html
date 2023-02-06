@@ -1,0 +1,13 @@
+<div class="list">
+    <h1>Cats to Adopt</h1>
+  
+    <div class="list" *ngFor="let cat of catsAdoption;let index=index" appTest>
+      <div class="cat">
+      <div> {{cat.nom}} </div>
+      <div> {{cat.race}} </div>
+      <span> {{cat.date | date: 'shortDate'}} </span>
+      <span> <img src={{cat.photo}} alt="photo" width="200" ></span>
+      <span><button (click)="adoptCat(index)">Adopt this kitty</button></span>
+  </div>
+      </div>
+  

@@ -1,0 +1,22 @@
+<div clas="create">
+    <h1>Create a Cat to Adopt</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="formulaire">
+      <label for="nom">Nom: </label>
+      <input type="text" id="nom" placeholder="Cat name" name="nom" formControlName="nom" required>
+      <!-- <div *ngIf="nom.errors">Le nom est requis</div> -->
+      <label for="race">Race: </label>
+      <input type="text" id="race" placeholder="cat race" name="race"  required formControlName="race">
+      <!-- <div *ngIf="race.errors">La race est requise</div> -->
+      <label for="date">Date de naisance: </label>
+      <input type="date" id="date" placeholder="Birth date"  name="date"  formControlName="date" required>
+      <!-- <div *ngIf="date.errors">La date de naissance est requise</div> -->
+      <label for="photo">lien vers une photo: </label>
+      <input type="text" id="photo" placeholder="Picture of the cat link"  name="photo"  formControlName="photo" required>
+      <!-- <div *ngIf="race.errors">Une photo est nécessaire</div> -->
+    
+      <button type="submit" [disabled]="form.invalid">Create a new cat</button>
+    </div>
+    </form>
+    </div>
+    

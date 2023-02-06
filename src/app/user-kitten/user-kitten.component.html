@@ -1,0 +1,13 @@
+<div class="user">
+    <h1>My Cats </h1>
+  <div class=liste *ngFor="let item of cats">
+    <span>nom: {{item.nom}}</span>
+    <span>race: {{item.race}}</span>
+    <span>Date de naissance:  {{item.date | date: 'shortDate'}}</span>
+    <span><img src="{{item.photo}}" alt="picture" width="200px"></span>
+  </div>
+  </div>
+  
+  
+  
+  

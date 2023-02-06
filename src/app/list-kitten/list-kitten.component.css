@@ -1,0 +1,19 @@
+.list{
+    display:flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+  }
+  .lapinsList{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lain{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .bonus{
+    display:none;
+  }
+  

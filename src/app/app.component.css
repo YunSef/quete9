@@ -1,0 +1,17 @@
+*{
+    display: flex;
+    flex-direction: column;
+    height :auto
+    }
+  
+    .droit{
+      display: flex;
+      flex-direction: row;
+      display: 3;
+    }
+  
+    .list{
+      display: flex;
+      flex-direction: row;
+    }
+  
